@@ -15,7 +15,7 @@ export default function Footer() {
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
-    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/eyob-tamir/" role="button"><i class="bi bi-linkedin"></i></a>
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/eyob-tamir/" role="button" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi  bi-github"></i></a>
   </div>
   <p className='text-light'>© 2023 Copyright</p>
