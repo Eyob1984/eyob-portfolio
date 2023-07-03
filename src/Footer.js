@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Footer() {
 
   const style = {
-    position: 'absolute',
+    position: 'fixed',
     bottom: '0',
     width: '100%',
   }
@@ -15,7 +15,7 @@ export default function Footer() {
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
-    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/eyob-tamir/" role="button"><i class="bi bi-linkedin"></i></a>
     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi  bi-github"></i></a>
   </div>
   <p className='text-light'>© 2023 Copyright</p>

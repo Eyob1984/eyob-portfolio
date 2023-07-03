@@ -6,7 +6,7 @@ import Pdf from './asset/image/resume.docx.pdf'
 export default function PortfolioNav() {
   return (
     <div>
-       <Nav className="justify-content-end bg-dark text-danger " activeKey="/home">
+       <Nav className="justify-content-end bg-dark " activeKey="/home">
         <Nav.Item>
           <Nav.Link href="/home">Projects</Nav.Link>
         </Nav.Item>
