@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 function Connect() {
   const [showForm, setShowForm] = useState(false);
   const [char, setChar] = useState(250);
+  const [color, setColor] = useState('green')
+  const [isTextareaDisabled, setIsTextareaDisabled] = useState(false)
 
   const style = {
     width: '60%',
@@ -14,6 +16,15 @@ function Connect() {
 
   const handleChar = () => {
     setChar(char - 1)
+    if(char <= 25) {
+      setColor('yellow')
+    } 
+    if(char <= 10) {
+      setColor('red')
+    }
+    if(char <=0) {
+      setIsTextareaDisabled(true)
+    }
   }
 
   return (
@@ -21,7 +32,7 @@ function Connect() {
       {showForm && (
         <div>
           <form>
-            <div className="mb-3">
+            <div className="m-3">
               <label htmlFor="InputEmail1" className="form-label">
                 Email address
               </label>
@@ -44,13 +55,14 @@ function Connect() {
                placeholder='Enter your text'
                style={style}
                onChange={handleChar}
+               disabled={isTextareaDisabled}
                /> 
             </div>
-            <p>Maximum: {char}Char</p>
+            <p style={{color: color}}>Maximum: {char}Char</p>
           </form>
         </div>
       )}
-        <button className='button-effect' onClick={handleConnectClick}>Connect</button>
+        <button className="btn btn-outline-light btn-floating m-1" onClick={handleConnectClick}>Connect</button>
     </div>
   );
 }
